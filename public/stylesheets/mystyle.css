@@ -53,13 +53,37 @@
     -webkit-overflow-scrolling: touch;
 }
 
-/* altro css bootstrap per colonne */
-
+/* Proprietà interne alla griglia */
 .themed-grid-col {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: ;
+  background-color: ; /* TODO mettere qualcosa? */
   border: 0.5px solid black;
   text-align: center;
 }
 
+/* logo */
+.display-5 {
+	font-size: 72px;
+	font-family: Antic;
+	background-color: #996600;
+	border-radius: 10px;
+}
+
+/* contenitore logo */
+#presentazione {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-right: 10px !important;
+	padding-left: 10px !important;
+}
+
+/* tutto */
+body {
+	background-color: #edaa2d;
+}
+
+/*  */
+#txtPresentaz {
+	font-size: 20px;
+}
