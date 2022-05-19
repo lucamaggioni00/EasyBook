@@ -66,11 +66,15 @@
 .display-5 {
 	font-size: 72px;
 	font-family: Antic;
+	color: #edaa2d;
 	background-color: #996600;
 	border-radius: 10px;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	box-shadow: 0px 2px 4px 0px black;
 }
 
-/* contenitore logo */
+/* contenitore logo+testo */
 #presentazione {
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -78,7 +82,7 @@
 	padding-left: 10px !important;
 }
 
-/* tutto */
+/* all */
 body {
 	background-color: #edaa2d;
 }
@@ -86,4 +90,7 @@ body {
 /*  */
 #txtPresentaz {
 	font-size: 20px;
+	margin-bottom: 0px !important;
 }
+
+/*  */
