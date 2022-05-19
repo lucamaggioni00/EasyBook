@@ -57,7 +57,6 @@
 .themed-grid-col {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: ; /* TODO mettere qualcosa? */
   border: 0.5px solid black;
   text-align: center;
 }
@@ -100,10 +99,9 @@ body {
 
 /*  */
 footer {
-	margin-top: 30px;
-	margin-bottom: 15px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin-top: 30px !important;
+	margin-bottom: 15px !important;
+	padding-top: 10px !important;
 }
 
 /* form per numero tavolo */
@@ -112,7 +110,14 @@ footer {
 	margin-bottom: 100px;
 }
 
-.form-select {
-	text-align: center;
+/* righe */
+hr {
+	color: #423823;
+}
+
+/*  */
+#griglia {
+	margin-bottom: 70px;
+	margin-top: 10px;
 }
 
