@@ -138,9 +138,9 @@ hr {
 
 /* animazione bottoni */
 .btn:active {
-  background-color: #825600;
-  box-shadow: 0 5px #533700;
-  transform: translateY(4px);
+    background-color: #825600;
+    box-shadow: 0 5px #533700;
+    transform: translateY(4px);
 }
 
 /* contenitore bottone conferma*/
@@ -154,6 +154,7 @@ hr {
     height: 40px;
     width: 40px;
     padding: 0px;
+    border-radius: 15px;
 }
 
 /* contatore ordini */
@@ -167,10 +168,17 @@ hr {
 #incrementa, #decrementa {
     padding: 0px;
     border: 5px;
+    border-radius: 15px;
 }
 
 #incrementa:active {
-  background-color: #825600;
-  box-shadow: 0 5px #533700;
-  transform: translateY(2px);
+    background-color: #8c8370;
+    box-shadow: 0 4px #e6e3df;
+    transform: translateY(2px);
+}
+
+#decrementa:active {
+    background-color: #8c8370;
+    box-shadow: 0 4px #e6e3df;
+    transform: translateY(2px);
 }
