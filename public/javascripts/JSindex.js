@@ -18,17 +18,18 @@ function selectTavolo(){
 	
 }
 
-/* per contatore piuMeno TODO METTERE IN LOCAL STORAGE */
-function incrementa() {
-	let num = parseInt($('contatore1').innerText); // parse ad intero
-	num++;
-	$('contatore1').innerText = num;
+/* per contatori piuMeno TODO METTERE IN LOCAL STORAGE */
+function incrementa(numRiga) {
+	let cont = parseInt($('contatore'+numRiga).innerText); // parse ad intero
+	cont++;
+	console.log('contatore'+numRiga);
+	$('contatore'+numRiga).innerText = cont;
 }
 
-function decrementa() {
-	let num = parseInt($('contatore1').innerText); // parse ad intero
-	if (num >= 1) { // non può essere numero negativo
-		num--;
-		$('contatore1').innerText = num;
+function decrementa(numRiga) {
+	let cont = parseInt($('contatore'+numRiga).innerText); // parse ad intero
+	if (cont >= 1) { // non può essere numero negativo
+		cont--;
+		$('contatore'+numRiga).innerText = cont;
 	}
 }
