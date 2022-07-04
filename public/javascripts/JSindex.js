@@ -18,7 +18,7 @@ function selectTavolo(){
 	
 }
 
-/* per contatori piuMeno TODO METTERE IN SESSION STORAGE */
+/* per contatori piuMeno */
 function incrementa(numRiga) {
 	let cont = parseInt($('contatore'+numRiga).innerText); // parse ad intero
 	cont++;
