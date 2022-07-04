@@ -17,3 +17,8 @@ function selectTavolo(){
 	}
 	
 }
+
+/* per contatore piuMeno*/
+function incrementa() {
+	
+}
