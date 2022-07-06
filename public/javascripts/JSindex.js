@@ -1,5 +1,21 @@
 /* --- Scripts della pagina index.html --- */
 
+/* chiamata AJAX per menu */
+const xhttp = new XMLHttpRequest();
+
+xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto cambia stato. tipo quando la risposta è pronta
+    if (this.readyState == 4 && this.status == 200) { // tutto ok
+    	var menu = JSON.parse(xhttp.responseText); // ajax ritorna una stringa, quindi va riformattata in json
+    	console.log("menu id è" + menu.num1.nome);
+    }
+};
+
+xhttp.open("GET", "../others/menu1.json", true);
+console.log("Richiesta creata");
+xhttp.send();
+console.log("Richiesta mandata");
+
+
 /* TODO: MAGARI FARE CON WINDOW.ONLOAD */
 /* Recupero dei contatori dallo storage al window loading --> utile x refresh */
 
@@ -48,4 +64,3 @@ function decrementa(numRiga) {
 		sessionStorage.setItem(numRiga, cont);
 	}
 }
-
