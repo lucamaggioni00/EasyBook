@@ -10,12 +10,12 @@ var app = express();
 /* routing NOTA: __dirname è il path assoluto fino a qui */
 
 app.get('/', function(req, res) {
-  console.log("-reindirizzamento a index.hmtl");
+  console.log("redirect to index.hmtl");
   res.redirect('/index.html');
 });
 
 app.get('/index.html', function(req, res) {
-  console.log("-ricevuta GET per index.hmtl");
+  console.log("received GET index.hmtl");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/index.html'));
 });
@@ -23,31 +23,31 @@ app.get('/index.html', function(req, res) {
 /* routing risorse non html */
 
 app.get('/images/icona_menu.png', function(req, res) {
-  console.log("-ricevuta GET per icona_menu.png");
+  console.log("received GET icona_menu.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_menu.png'));
 });
 
 app.get('/images/icona_minus.png', function(req, res) {
-  console.log("-ricevuta GET per icona_minus.png");
+  console.log("received GET icona_minus.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_minus.png'));
 });
 
 app.get('/images/icona_plus.png', function(req, res) {
-  console.log("-ricevuta GET per icona_plus.png");
+  console.log("received GET icona_plus.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_plus.png'));
 });
 
 app.get('/javascripts/JSindex.js', function(req, res) {
-  console.log("-ricevuta GET per JSindex.js");
+  console.log("received GET JSindex.js");
   res.setHeader('Content-Type', 'application/javascript');
   res.sendFile(path.join(__dirname, '/public/javascripts/JSindex.js'));
 });
 
 app.get('/stylesheets/mystyle.css', function(req, res) {
-  console.log("-ricevuta GET per mystyle.css");
+  console.log("received GET mystyle.css");
   res.setHeader('Content-Type', 'text/css');
   res.sendFile(path.join(__dirname, '/public/stylesheets/mystyle.css'));
 });
@@ -56,7 +56,7 @@ app.get('/stylesheets/mystyle.css', function(req, res) {
 
 /* test TODO DA TOGLIERE */
 app.get('/test.html', function(req, res) {
-  console.log("-ricevuta GET per prova.hmtl");
+  console.log("received GET prova.hmtl");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/prova.html'));
 });
