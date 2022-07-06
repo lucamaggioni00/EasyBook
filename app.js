@@ -20,14 +20,12 @@ app.get('/index.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/htmls/index.html'));
 });
 
-//TODO DA METTERE QUANDO SARA' PRONTA
-/*
-app.get('/riepilogo.html', function(req, res) {
+app.get('/riepilogo', function(req, res) {
   console.log("received GET riepilogo.html");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
 });
-*/
+
 
 /* routing risorse non html */
 
