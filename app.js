@@ -20,6 +20,15 @@ app.get('/index.html', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/htmls/index.html'));
 });
 
+//TODO DA METTERE QUANDO SARA' PRONTA
+/*
+app.get('/riepilogo.html', function(req, res) {
+  console.log("received GET riepilogo.html");
+  res.setHeader('Content-Type', 'text/html');
+  res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
+});
+*/
+
 /* routing risorse non html */
 
 app.get('/images/icona_menu.png', function(req, res) {
@@ -52,6 +61,11 @@ app.get('/stylesheets/mystyle.css', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/stylesheets/mystyle.css'));
 });
 
+app.get('/others/menu1.json', function(req, res) {
+  console.log("received GET menu1.json");
+  res.setHeader('Content-Type', 'application/json');
+  res.sendFile(path.join(__dirname, '/public/others/menu1.json'));
+});
 
 
 /* test TODO DA TOGLIERE */
