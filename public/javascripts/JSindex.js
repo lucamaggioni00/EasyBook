@@ -30,6 +30,19 @@ for (let i=0; i < 20; i++) {
 	$("contatore"+i).innerText = sessionStorage.getItem(i);
 }
 
+/* Costruzione pagina recap TODO ACCEDO AL DOM DOPO CHE SI è CARICATO!! */
+function riepilogo() {
+	sessionStorage.setItem("nTavolo", selectTavolo());
+	document.addEventListener("load", function () {
+  		// do things after the DOM loads partially
+  		//$("nTavoloRecap").innerText = sessionStorage.getItem("nTavolo");
+  		alert();//NON FUNZIONA PORCA MISERIA
+	});
+	
+	
+}
+
+
 
 /* parametrizzazione della funzione per getElementById() */
 function $(id) { 
@@ -37,14 +50,15 @@ function $(id) {
 } 
 
 
-/* acquisisce il numero del tavolo TODO METTERLA DA QUALCHE PARTE*/
+/* ritorna il numero del tavolo selezionato */
 function selectTavolo(){
 	var x = $('mySelect').selectedIndex; // x = indice del valore selezionato
 	if (x != "") { // se ha selezionato un numero 
-		return document.getElementsByTagName('option')[x].value;
+		var nTav = document.getElementsByTagName('option')[x].value;
+		return nTav;
 	}
 	else {
-		alert("Metti un numero");
+		alert("Perfavore, inserisci il numero del tuo tavolo");
 	}
 }
 
