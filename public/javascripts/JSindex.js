@@ -5,8 +5,10 @@ const xhttp = new XMLHttpRequest();
 
 xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto cambia stato. tipo quando la risposta è pronta
     if (this.readyState == 4 && this.status == 200) { // tutto ok
-    	var menu = JSON.parse(xhttp.responseText); // ajax ritorna una stringa, quindi va riformattata in json
-    	console.log("menu id è" + menu.num1.nome);
+    	var menu = JSON.parse(xhttp.responseText); // parsa la stringa json in un oggetto javascript
+    	console.log("Dovrebbe mostrare 1 --> " + menu[0].ID);
+    	$("piatto1").innerText = menu[0].Nome;
+    	$("prezzo1").innerText = "€ " + menu[0].Prezzo;
     }
 };
 
