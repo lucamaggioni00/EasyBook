@@ -182,3 +182,12 @@ hr {
     box-shadow: 0 4px #e6e3df;
     transform: translateY(2px);
 }
+
+/* ancore */
+a {
+    color: #edaa2d;
+}
+
+a:hover {
+    color: #212529;
+}
