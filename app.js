@@ -14,7 +14,7 @@ app.get('/', function(req, res) {
   res.redirect('/index.html');
 });
 
-app.get('/index.html', function(req, res) {
+app.get('/index', function(req, res) {
   console.log("received GET index.hmtl");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/index.html'));
