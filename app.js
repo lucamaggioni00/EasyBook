@@ -11,7 +11,7 @@ var app = express();
 
 app.get('/', function(req, res) {
   console.log("redirect to index.hmtl");
-  res.redirect('/index.html');
+  res.redirect('/index');
 });
 
 app.get('/index', function(req, res) {
