@@ -24,13 +24,11 @@ xhttp.send();
 // TODO FAI IF(NULL) -> SET ITEM , E POI UNA ISTR DI INSERIMENTO DEL DOM DOPO IF, CHE TANTO E' UGUALE
 for (let i=0; i < 20; i++) { 
 	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
-	if (sessionStorage.getItem(i) != null) { // prende il valore dallo storage solo se c'era già
-		$("contatore"+i).innerText = sessionStorage.getItem(i);
-	}
-	else { // non c'è nulla nello storage, quindi setto a 0 e lo inserisco in html
+	if (sessionStorage.getItem(i) == null) { // se il val dello storage non è settato, viene inizializzato
 		sessionStorage.setItem(i, "0");
-		$("contatore"+i).innerText = sessionStorage.getItem(i);
 	}
+	// inserisce i valori nell'html
+	$("contatore"+i).innerText = sessionStorage.getItem(i);
 }
 
 
