@@ -6,8 +6,7 @@ const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto cambia stato. tipo quando la risposta è pronta
     if (this.readyState == 4 && this.status == 200) { // tutto ok
     	var menu = JSON.parse(xhttp.responseText); // parsa la stringa json in un oggetto javascript
-    	console.log("Dovrebbe mostrare 1 --> " + menu[0].ID);
-    	// TODO iterare l'inserimento, ma prima, allineare lo 0 ANCHE IN WEB STORAGE
+    	// iterazione dell'inserimento del JSON
     	for (var i = 0; i < 20; i++) {
     		$("piatto"+i).innerText = menu[i].Nome;
     		$("prezzo"+i).innerText = "€ " + menu[i].Prezzo;
@@ -16,16 +15,16 @@ xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto ca
 };
 
 xhttp.open("GET", "../others/menu1.json", true);
-console.log("Richiesta creata");
+//console.log("Richiesta creata");
 xhttp.send();
-console.log("Richiesta mandata");
+//console.log("Richiesta mandata");
 
 
 /* TODO: MAGARI FARE CON WINDOW.ONLOAD */
 /* Recupero dei contatori dallo storage al window loading --> utile x refresh */
 
-for (let i=1; i <= 20; i++) { // da 1 a 20 sono le key
-	console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
+for (let i=0; i < 20; i++) { 
+	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
 	if (sessionStorage.getItem(i) != null) { // prende il valore dallo storage solo se c'era già
 		$("contatore"+i).innerText = sessionStorage.getItem(i);
 	}
@@ -48,7 +47,6 @@ function selectTavolo(){
 	else {
 		alert("Metti un numero");
 	}
-	
 }
 
 /* per contatori piuMeno */
