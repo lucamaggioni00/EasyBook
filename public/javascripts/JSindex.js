@@ -20,15 +20,17 @@ xhttp.send();
 //console.log("Richiesta mandata");
 
 
-/* TODO: MAGARI FARE CON WINDOW.ONLOAD */
-/* Recupero dei contatori dallo storage al window loading --> utile x refresh */
-
+/* Recupero dei contatori dallo storage al window loading e li inserisco in html --> utile x refresh */
+// TODO FAI IF(NULL) -> SET ITEM , E POI UNA ISTR DI INSERIMENTO DEL DOM DOPO IF, CHE TANTO E' UGUALE
 for (let i=0; i < 20; i++) { 
 	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
 	if (sessionStorage.getItem(i) != null) { // prende il valore dallo storage solo se c'era già
 		$("contatore"+i).innerText = sessionStorage.getItem(i);
 	}
-	// else rimane lo 0 di default del contatore
+	else { // non c'è nulla nello storage, quindi setto a 0 e lo inserisco in html
+		sessionStorage.setItem(i, "0");
+		$("contatore"+i).innerText = sessionStorage.getItem(i);
+	}
 }
 
 
