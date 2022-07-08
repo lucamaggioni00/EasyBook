@@ -96,33 +96,44 @@
     </div>
   </div>
 
-  <div id="griglia" class="container">
+  <div id="griglia" class="container"> <!-- indici da 0 a 19 -->
 
     <div class="row mb-3"> 
-      <div id="piatto1" class="col-4 themed-grid-col">1 nome piatto lunghissimissimo</div>
-      <div id="prezzo1" class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto0" class="col-4 themed-grid-col">piatto0</div>
+      <div id="prezzo0" class="col-4 themed-grid-col">prezzo0</div>
+      <div class="col-4 themed-grid-col">
+        <div id="buttonContainer"> <!-- bottoni piu/meno -->
+            <button onclick="incrementa(0);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
+              <p id="contatore0" class="contatore">0</p>
+            <button onclick="decrementa(0);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
+            </div>
+      </div>
+      </div>
+    <div class="row mb-3">
+      <div id="piatto1" class="col-4 themed-grid-col">piatto1</div>
+      <div id="prezzo1" class="col-4 themed-grid-col">prezzo1</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(1);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore1" class="contatore">0</p>
+              <p id="contatore1" class="contatore inline">0</p>
             <button onclick="decrementa(1);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">2 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto2" class="col-4 themed-grid-col">piatto2</div>
+      <div id="prezzo2" class="col-4 themed-grid-col">prezzo2</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(2);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore2" class="contatore inline">0</p>
+              <p id="contatore2" class="contatore">0</p>
             <button onclick="decrementa(2);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">3 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto3" class="col-4 themed-grid-col">piatto3</div>
+      <div id="piatto3" class="col-4 themed-grid-col">prezzo3</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(3);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -130,32 +141,32 @@
             <button onclick="decrementa(3);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">4 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto4" class="col-4 themed-grid-col">piatto4</div>
+      <div id="prezzo4" class="col-4 themed-grid-col">prezzo4</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(4);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore4" class="contatore">0</p>
+              <p id="contatore4" class="contatore inline">0</p>
             <button onclick="decrementa(4);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">5 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto5" class="col-4 themed-grid-col">piatto5</div>
+      <div id="prezzo5" class="col-4 themed-grid-col">prezzo5</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(5);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore5" class="contatore inline">0</p>
+              <p id="contatore5" class="contatore">0</p>
             <button onclick="decrementa(5);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">6 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto6" class="col-4 themed-grid-col">piatto6</div>
+      <div id="prezzo6" class="col-4 themed-grid-col">prezzo6</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(6);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -163,32 +174,32 @@
             <button onclick="decrementa(6);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">7 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto7" class="col-4 themed-grid-col">piatto7</div>
+      <div id="prezzo7" class="col-4 themed-grid-col">prezzo7</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(7);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore7" class="contatore">0</p>
+              <p id="contatore7" class="contatore inline">0</p>
             <button onclick="decrementa(7);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">8 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto8" class="col-4 themed-grid-col">piatto8</div>
+      <div id="prezzo8" class="col-4 themed-grid-col">prezzo8</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(8);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore8" class="contatore inline">0</p>
+              <p id="contatore8" class="contatore">0</p>
             <button onclick="decrementa(8);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">9 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto9" class="col-4 themed-grid-col">piatto9</div>
+      <div id="prezzo9" class="col-4 themed-grid-col">prezzo9</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(9);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -196,32 +207,32 @@
             <button onclick="decrementa(9);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">10 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto10" class="col-4 themed-grid-col">piatto10</div>
+      <div id="prezzo10" class="col-4 themed-grid-col">prezzo10</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(10);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore10" class="contatore">0</p>
+              <p id="contatore10" class="contatore inline">0</p>
             <button onclick="decrementa(10);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">11 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto11" class="col-4 themed-grid-col">piatto11</div>
+      <div id="prezzo11" class="col-4 themed-grid-col">prezzo11</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(11);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore11" class="contatore inline">0</p>
+              <p id="contatore11" class="contatore">0</p>
             <button onclick="decrementa(11);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">12 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto12" class="col-4 themed-grid-col">piatto12</div>
+      <div id="prezzo12" class="col-4 themed-grid-col">prezzo12</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(12);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -229,32 +240,32 @@
             <button onclick="decrementa(12);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">13 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto13" class="col-4 themed-grid-col">piatto13</div>
+      <div id="prezzo13" class="col-4 themed-grid-col">prezzo13</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(13);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore13" class="contatore">0</p>
+              <p id="contatore13" class="contatore inline">0</p>
             <button onclick="decrementa(13);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">14 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto14" class="col-4 themed-grid-col">piatto14</div>
+      <div id="prezzo14" class="col-4 themed-grid-col">prezzo14</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(14);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore14" class="contatore inline">0</p>
+              <p id="contatore14" class="contatore">0</p>
             <button onclick="decrementa(14);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">15 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto15" class="col-4 themed-grid-col">piatto15</div>
+      <div id="prezzo15" class="col-4 themed-grid-col">prezzo15</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(15);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -262,32 +273,32 @@
             <button onclick="decrementa(15);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">16 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto16" class="col-4 themed-grid-col">piatto16</div>
+      <div id="prezzo16" class="col-4 themed-grid-col">prezzo16</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(16);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore16" class="contatore">0</p>
+              <p id="contatore16" class="contatore inline">0</p>
             <button onclick="decrementa(16);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">17 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto17" class="col-4 themed-grid-col">piatto17</div>
+      <div id="prezzo17" class="col-4 themed-grid-col">prezzo17</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(17);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore17" class="contatore inline">0</p>
+              <p id="contatore17" class="contatore">0</p>
             <button onclick="decrementa(17);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-      </div>
+    </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">18 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto18" class="col-4 themed-grid-col">piatto18</div>
+      <div id="prezzo18" class="col-4 themed-grid-col">prezzo18</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(18);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
@@ -295,26 +306,15 @@
             <button onclick="decrementa(18);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
-    </div>
+      </div>
     <div class="row mb-3">
-      <div class="col-4 themed-grid-col">19 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
+      <div id="piatto19" class="col-4 themed-grid-col">piatto19</div>
+      <div id="prezzo19" class="col-4 themed-grid-col">prezzo19</div>
       <div class="col-4 themed-grid-col">
         <div id="buttonContainer"> <!-- bottoni piu/meno -->
             <button onclick="incrementa(19);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore19" class="contatore">0</p>
+              <p id="contatore19" class="contatore inline">0</p>
             <button onclick="decrementa(19);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
-            </div>
-      </div>
-      </div>
-    <div class="row mb-3">
-      <div class="col-4 themed-grid-col">20 nome piatto lunghissimissimo</div>
-      <div class="col-4 themed-grid-col">&euro; prezzo</div>
-      <div class="col-4 themed-grid-col">
-        <div id="buttonContainer"> <!-- bottoni piu/meno -->
-            <button onclick="incrementa(20);" id="incrementa"><img class="bottonePiuMeno" src="../images/icona_plus.PNG"></button> 
-              <p id="contatore20" class="contatore inline">0</p>
-            <button onclick="decrementa(20);" id="decrementa"><img class="bottonePiuMeno" src="../images/icona_minus.PNG"></button>
             </div>
       </div>
       </div>
