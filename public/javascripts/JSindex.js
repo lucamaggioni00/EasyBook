@@ -21,7 +21,6 @@ xhttp.send();
 
 
 /* Recupero dei contatori dallo storage al window loading e li inserisco in html --> utile x refresh */
-// TODO FAI IF(NULL) -> SET ITEM , E POI UNA ISTR DI INSERIMENTO DEL DOM DOPO IF, CHE TANTO E' UGUALE
 for (let i=0; i < 20; i++) { 
 	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
 	if (sessionStorage.getItem(i) == null) { // se il val dello storage non è settato, viene inizializzato
