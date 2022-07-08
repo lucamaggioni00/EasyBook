@@ -7,6 +7,10 @@ xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto ca
     if (this.readyState == 4 && this.status == 200) { // tutto ok
     	var menu = JSON.parse(xhttp.responseText); // parsa la stringa json in un oggetto javascript
     	console.log("Dovrebbe mostrare 1 --> " + menu[0].ID);
+    	// TODO iterare l'inserimento, ma prima, allineare lo 0
+    	for (var i=; i++) {
+    		Things[i]
+    	}
     	$("piatto1").innerText = menu[0].Nome;
     	$("prezzo1").innerText = "€ " + menu[0].Prezzo;
     }
