@@ -143,8 +143,8 @@ hr {
     transform: translateY(4px);
 }
 
-/* contenitore bottone conferma*/
-#confermaBottone {
+/* contenitore bottoni di conferma */
+.confirmButton {
     margin-left: 50px;
     margin-right: 50px;
 }
