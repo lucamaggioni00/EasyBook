@@ -51,7 +51,7 @@ function selectTavolo(){
 		return nTav;
 	}
 	else {
-		alert("Perfavore, inserisci il numero del tuo tavolo");
+		alert("Perfavore, torna indietro e inserisci il numero del tuo tavolo");
 	}
 }
 

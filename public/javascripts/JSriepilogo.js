@@ -4,9 +4,15 @@ scontrino();
 
 /* costruisce tutto il riepilogo dallo storage */
 function scontrino() {
-	
+
 	// inserisce numTavolo
-	$('nTavoloRecap').innerText = "Tavolo: " + (sessionStorage.getItem("nTavolo"));
+	if (sessionStorage.getItem('nTavolo') == "undefined") { // se user non ha messo il num tavolo
+		$('nTavoloRecap').innerText = "Tavolo: non selezionato. Torna alla pagina precedente.";
+	}
+	else {
+		$('nTavoloRecap').innerText = "Tavolo: " + (sessionStorage.getItem("nTavolo"));
+	}
+	
 
 	// inserisce i valori nella griglia
 	for (let i=0; i < 20; i++) { 

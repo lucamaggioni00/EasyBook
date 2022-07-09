@@ -166,8 +166,8 @@ hr {
 
 /* contatori nel riepilogo */
 .contatoreRec {
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-top: 0px;
     font-size: 20px;
 }
 
