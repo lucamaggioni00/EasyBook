@@ -21,9 +21,6 @@ xhttp.send();
 
 
 /* Recupero dei contatori e numTav dallo storage al window loading e li inserisco in html --> utile x refresh */
-if (sessionStorage.getItem("nTavolo") != null) { // se il val dello storage non è settato, viene inizializzato
-	document.getElementsByTagName('option')[x].value = sessionStorage.getItem('nTavolo');
-}
 
 // per contatori
 for (let i=0; i < 20; i++) { 
@@ -37,11 +34,8 @@ for (let i=0; i < 20; i++) {
 
 /* TODO inserimento ntavolo con controllo?? */
 function riepilogo() {
-	if(sessionStorage.getItem('nTavolo') == null) { // non c'è già il num tavolo
-		sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
-		console.log("numTav settato nello storage");
-	}
-	//se c'è già, lo lascio lì e poi verrà preso dallo storage
+	sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
+	console.log("numTav settato nello storage");
 }
 
 
