@@ -30,18 +30,11 @@ for (let i=0; i < 20; i++) {
 	$("contatore"+i).innerText = sessionStorage.getItem(i);
 }
 
-/* Costruzione pagina recap TODO ACCEDO AL DOM DOPO CHE SI è CARICATO!! */
+/* TODO inserimento ntavolo con controllo?? */
 function riepilogo() {
-	sessionStorage.setItem("nTavolo", selectTavolo());
-	document.addEventListener("load", function () {
-  		// do things after the DOM loads partially
-  		//$("nTavoloRecap").innerText = sessionStorage.getItem("nTavolo");
-  		alert();//NON FUNZIONA PORCA MISERIA
-	});
-	
-	
+	sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
+	console.log("numTav settato nello storage");
 }
-
 
 
 /* parametrizzazione della funzione per getElementById() */
