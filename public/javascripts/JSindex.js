@@ -20,8 +20,7 @@ xhttp.send();
 //console.log("Richiesta mandata");
 
 
-/* Recupero dei contatori e numTav dallo storage al window loading e li inserisco in html --> utile x refresh */
-
+/* Recupero contatori al window loading e li inserisco in html */
 // per contatori
 for (let i=0; i < 20; i++) { 
 	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
@@ -34,10 +33,23 @@ for (let i=0; i < 20; i++) {
 
 /* TODO inserimento ntavolo con controllo?? */
 function riepilogo() {
-	sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
-	console.log("numTav settato nello storage");
+	let valore = selectTavolo();
+	// se non hai selezionato, ma c'è un valore numero nello storage
+	if(valore == false && sessionStorage.getItem('nTavolo') !== null) {
+		console.log("Non hai selezionato un tavolo, ma c'era il valore vecchio nello storage");
+		//non fare niente allo storage
+	}
+	// se non hai selezionato, e non c'è un numero vecchio nello storage
+	else if(valore == false && sessionStorage.getItem('nTavolo') == null) {
+		sessionStorage.setItem("nTavolo", "false");
+		console.log("Non hai selezionato un tavolo, e non c'era niente, quindi ho messo false");
+	}
+	// se ho selezionato, in ogni caso devo scrivere o sovrascrivere
+	else if(valore != false) {
+		sessionStorage.setItem("nTavolo", valore);
+		console.log("nuovo numero settato nello storage");
+	}
 }
-
 
 /* parametrizzazione della funzione per getElementById() */
 function $(id) { 
@@ -45,7 +57,7 @@ function $(id) {
 } 
 
 
-/* ritorna il numero del tavolo selezionato */
+/* ritorna il numero del tavolo selezionato, oppure false*/
 function selectTavolo(){
 	var x = $('mySelect').selectedIndex; // x = indice del valore selezionato
 	if (x != "") { // se ha selezionato un numero 
@@ -53,7 +65,8 @@ function selectTavolo(){
 		return nTav;
 	}
 	else {
-		alert("Perfavore, torna indietro e inserisci il numero del tuo tavolo");
+		//TODO TOGLIERE alert("Perfavore, torna indietro e inserisci il numero del tuo tavolo");
+		return false;
 	}
 }
 

@@ -6,7 +6,7 @@ scontrino();
 function scontrino() {
 
 	// inserisce numTavolo
-	if (sessionStorage.getItem('nTavolo') == "undefined") { // se user non ha messo il num tavolo
+	if (sessionStorage.getItem('nTavolo') == "false") { // se user non ha messo il num tavolo
 		$('nTavoloRecap').innerText = "Tavolo: non selezionato. Torna alla pagina precedente.";
 	}
 	else {
