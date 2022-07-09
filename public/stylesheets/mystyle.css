@@ -168,7 +168,7 @@ hr {
 .contatoreRec {
     margin-bottom: 0px;
     margin-top: 0px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 /* bottoni piuMeno */
@@ -215,7 +215,7 @@ a:hover {
     font-style: italic;
     font-weight: 600;
     margin-top: 10px;
-    border-top: 1px!important!important;
+    border-top: 1px!important;
     border-bottom: 1px!important;
 }
 
