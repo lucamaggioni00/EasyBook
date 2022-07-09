@@ -172,19 +172,19 @@ hr {
 }
 
 /* bottoni piuMeno */
-#incrementa, #decrementa {
+.incrementa, .decrementa {
     padding: 0px;
     border: 5px;
     border-radius: 15px;
 }
 
-#incrementa:active {
+.incrementa:active {
     background-color: #8c8370;
     box-shadow: 0 4px #e6e3df;
     transform: translateY(2px);
 }
 
-#decrementa:active {
+.decrementa:active {
     background-color: #8c8370;
     box-shadow: 0 4px #e6e3df;
     transform: translateY(2px);
