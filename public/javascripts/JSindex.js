@@ -20,7 +20,12 @@ xhttp.send();
 //console.log("Richiesta mandata");
 
 
-/* Recupero dei contatori dallo storage al window loading e li inserisco in html --> utile x refresh */
+/* Recupero dei contatori e numTav dallo storage al window loading e li inserisco in html --> utile x refresh */
+if (sessionStorage.getItem("nTavolo") != null) { // se il val dello storage non è settato, viene inizializzato
+	document.getElementsByTagName('option')[x].value = sessionStorage.getItem('nTavolo');
+}
+
+// per contatori
 for (let i=0; i < 20; i++) { 
 	//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
 	if (sessionStorage.getItem(i) == null) { // se il val dello storage non è settato, viene inizializzato
@@ -32,8 +37,11 @@ for (let i=0; i < 20; i++) {
 
 /* TODO inserimento ntavolo con controllo?? */
 function riepilogo() {
-	sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
-	console.log("numTav settato nello storage");
+	if(sessionStorage.getItem('nTavolo') == null) { // non c'è già il num tavolo
+		sessionStorage.setItem("nTavolo", selectTavolo()); // setta ntavolo nello storage
+		console.log("numTav settato nello storage");
+	}
+	//se c'è già, lo lascio lì e poi verrà preso dallo storage
 }
 
 
