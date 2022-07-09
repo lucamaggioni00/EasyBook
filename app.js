@@ -53,6 +53,12 @@ app.get('/javascripts/JSindex.js', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/javascripts/JSindex.js'));
 });
 
+app.get('/javascripts/JSriepilogo.js', function(req, res) {
+  console.log("received GET JSriepilogo.js");
+  res.setHeader('Content-Type', 'application/javascript');
+  res.sendFile(path.join(__dirname, '/public/javascripts/JSriepilogo.js'));
+});
+
 app.get('/stylesheets/mystyle.css', function(req, res) {
   console.log("received GET mystyle.css");
   res.setHeader('Content-Type', 'text/css');
