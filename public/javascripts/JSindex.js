@@ -36,18 +36,16 @@ function riepilogo() {
 	let valore = selectTavolo();
 	// se non hai selezionato, ma c'è un valore numero nello storage
 	if(valore == false && sessionStorage.getItem('nTavolo') !== null) {
-		console.log("Non hai selezionato un tavolo, ma c'era il valore vecchio nello storage");
-		//non fare niente allo storage
+		// non fare niente allo storage
 	}
 	// se non hai selezionato, e non c'è un numero vecchio nello storage
 	else if(valore == false && sessionStorage.getItem('nTavolo') == null) {
 		sessionStorage.setItem("nTavolo", "false");
-		console.log("Non hai selezionato un tavolo, e non c'era niente, quindi ho messo false");
 	}
 	// se ho selezionato, in ogni caso devo scrivere o sovrascrivere
 	else if(valore != false) {
 		sessionStorage.setItem("nTavolo", valore);
-		console.log("nuovo numero settato nello storage");
+		//console.log("nuovo numero settato nello storage");
 	}
 }
 
