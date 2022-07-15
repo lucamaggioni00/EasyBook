@@ -1,11 +1,8 @@
 /* --- Scripts della pagina riepilogo.html --- */
 
 
-
-
-
-
 scontrino(); // chiamata per la costruzione della tabella di riepilogo
+
 
 /* costruisce tutto il riepilogo dallo storage */
 function scontrino() {
