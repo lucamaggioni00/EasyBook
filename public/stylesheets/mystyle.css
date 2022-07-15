@@ -228,3 +228,15 @@ a:hover {
     padding: 0px;
     border: 0px;
 }
+
+/* riga header della tabella di riepilogo */
+#tableHeader {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* regolazione padding dei div figli della riga di header riepilogo */
+#tableHeader > div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
