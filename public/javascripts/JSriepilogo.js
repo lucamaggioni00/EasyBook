@@ -43,9 +43,21 @@ function scontrino() {
 	//console.log("Richiesta creata");
 	xhttp.send();
 	//console.log("Richiesta mandata");
-
-
 }
+
+/* POST */
+function inviaOrdine() {
+	const xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto cambia stato. tipo quando la risposta è pronta
+		if (this.readyState == 4 && this.status == 200) {
+			// Quello che fa quando la richiesta è stata inviata
+			alert('Ordine inviato con successo! Buon appetito!');
+		}
+	xhttp.open("POST", ""); //TODO METTERE SERVER 
+  	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+  	xhttp.send("fname=Henry&lname=Ford"); // TODO CREARE DATA IN FORMATO URL ENCODED
+}
+
 
 /* parametrizzazione della funzione per getElementById() */
 function $(id) { 
