@@ -48,16 +48,23 @@ function scontrino() {
 /* POST */
 function inviaOrdine() {
 	const xhttp = new XMLHttpRequest();
+
 	xhttp.onreadystatechange = function() { // definisco cosa fa quando l'oggetto cambia stato. tipo quando la risposta è pronta
 		if (this.readyState == 4 && this.status == 200) {
 			// Quello che fa quando la richiesta è stata inviata
 			alert('Ordine inviato con successo! Buon appetito!');
+			//TODO poi deve rimandare alla pagina index! --> nota che magari posso fare redirect dal server, dopo che ha scritto nel txt
 		}
-	xhttp.open("POST", ""); //TODO METTERE SERVER 
+	}
+	xhttp.open("POST", "/invia-ordine");
   	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  	xhttp.send("fname=Henry&lname=Ford"); // TODO CREARE DATA IN FORMATO URL ENCODED
+  	xhttp.send("primo=ciao_bello&secondo=arrivederci"); // TODO CREARE DATA IN FORMATO URL ENCODED
 }
 
+/* costruisce il payload della richiesta POST */
+function buildMex() {
+	return "primo=ciao_bello&secondo=arrivederci";
+}
 
 /* parametrizzazione della funzione per getElementById() */
 function $(id) { 

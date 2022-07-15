@@ -26,8 +26,17 @@ app.get('/riepilogo', function(req, res) {
   res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
 });
 
+//TODO STO COSTRUENDO LA POST GESTITA DAL SERVER
+app.post('/invia-ordine', function() {
+  console.log("received POST invia-ordine");
+  //let esempio = req.body.primo;
+  console.log(req.body);
 
-/* routing risorse non html */
+  res.end("arrivata grazie");
+});
+
+
+/* routing risorse secondarie */
 
 app.get('/images/icona_menu.png', function(req, res) {
   console.log("received GET icona_menu.png");
