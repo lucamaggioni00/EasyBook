@@ -3,77 +3,81 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+const bp = require('body-parser');
 
 var app = express();
+
+app.use(bp.json());
+app.use(bp.urlencoded({ extended: true }));//TODO SERVE O TOLGO?
 
 
 /* routing NOTA: __dirname è il path assoluto fino a qui */
 
-app.get('/', function(req, res) {
+app.get('/', (req, res) => {
   console.log("redirect to index.hmtl");
   res.redirect('/index');
 });
 
-app.get('/index', function(req, res) {
+app.get('/index', (req, res) => {
   console.log("received GET index.hmtl");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/index.html'));
 });
 
-app.get('/riepilogo', function(req, res) {
+app.get('/riepilogo', (req, res) => {
   console.log("received GET riepilogo.html");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
 });
 
 //TODO STO COSTRUENDO LA POST GESTITA DAL SERVER
-app.post('/invia-ordine', function(req, res) {
+app.post('/invia-ordine', (req, res) => {
   console.log("received POST invia-ordine");
   let esempio = req.body;
   console.log(esempio);
-  res.end();
+  res.send("Ordine inviato");
 });
 
 
 /* routing risorse secondarie */
 
-app.get('/images/icona_menu.png', function(req, res) {
+app.get('/images/icona_menu.png', (req, res) => {
   console.log("received GET icona_menu.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_menu.png'));
 });
 
-app.get('/images/icona_minus.png', function(req, res) {
+app.get('/images/icona_minus.png', (req, res) => {
   console.log("received GET icona_minus.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_minus.png'));
 });
 
-app.get('/images/icona_plus.png', function(req, res) {
+app.get('/images/icona_plus.png', (req, res) => {
   console.log("received GET icona_plus.png");
   res.setHeader('Content-Type', 'image/x-icon');
   res.sendFile(path.join(__dirname, '/public/images/icona_plus.png'));
 });
 
-app.get('/javascripts/JSindex.js', function(req, res) {
+app.get('/javascripts/JSindex.js', (req, res) => {
   console.log("received GET JSindex.js");
   res.setHeader('Content-Type', 'application/javascript');
   res.sendFile(path.join(__dirname, '/public/javascripts/JSindex.js'));
 });
 
-app.get('/javascripts/JSriepilogo.js', function(req, res) {
+app.get('/javascripts/JSriepilogo.js', (req, res) => {
   console.log("received GET JSriepilogo.js");
   res.setHeader('Content-Type', 'application/javascript');
   res.sendFile(path.join(__dirname, '/public/javascripts/JSriepilogo.js'));
 });
 
-app.get('/stylesheets/mystyle.css', function(req, res) {
+app.get('/stylesheets/mystyle.css', (req, res) => {
   console.log("received GET mystyle.css");
   res.setHeader('Content-Type', 'text/css');
   res.sendFile(path.join(__dirname, '/public/stylesheets/mystyle.css'));
 });
 
-app.get('/others/menu1.json', function(req, res) {
+app.get('/others/menu1.json', (req, res) => {
   console.log("received GET menu1.json");
   res.setHeader('Content-Type', 'application/json');
   res.sendFile(path.join(__dirname, '/public/others/menu1.json'));
@@ -81,7 +85,7 @@ app.get('/others/menu1.json', function(req, res) {
 
 
 /* test TODO DA TOGLIERE */
-app.get('/test.html', function(req, res) {
+app.get('/test.html', (req, res) => {
   console.log("received GET prova.hmtl");
   res.setHeader('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, '/public/htmls/prova.html'));

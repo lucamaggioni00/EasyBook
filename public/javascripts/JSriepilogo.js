@@ -58,7 +58,8 @@ function inviaOrdine() {
 	}
 	xhttp.open("POST", "/invia-ordine");
   	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  	xhttp.send("primo=ciao_bello"); // TODO CREARE DATA IN FORMATO URL ENCODED
+  	var data = "NTavolo=14&Nome='pasta al sugo'&Quantita=4";
+  	xhttp.send(data); // TODO CREARE DATA IN FORMATO URL ENCODED
 }
 
 /* costruisce il payload della richiesta POST */
