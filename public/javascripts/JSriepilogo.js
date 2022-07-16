@@ -58,12 +58,12 @@ function inviaOrdine() {
 	}
 	xhttp.open("POST", "/invia-ordine");
   	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  	xhttp.send("primo=ciao_bello&secondo=arrivederci"); // TODO CREARE DATA IN FORMATO URL ENCODED
+  	xhttp.send("primo=ciao_bello"); // TODO CREARE DATA IN FORMATO URL ENCODED
 }
 
 /* costruisce il payload della richiesta POST */
 function buildMex() {
-	return "primo=ciao_bello&secondo=arrivederci";
+	//return "primo=ciao_bello";
 }
 
 /* parametrizzazione della funzione per getElementById() */

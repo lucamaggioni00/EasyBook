@@ -27,12 +27,11 @@ app.get('/riepilogo', function(req, res) {
 });
 
 //TODO STO COSTRUENDO LA POST GESTITA DAL SERVER
-app.post('/invia-ordine', function() {
+app.post('/invia-ordine', function(req, res) {
   console.log("received POST invia-ordine");
-  //let esempio = req.body.primo;
-  console.log(req.body);
-
-  res.end("arrivata grazie");
+  let esempio = req.body;
+  console.log(esempio);
+  res.end();
 });
 
 
