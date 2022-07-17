@@ -58,13 +58,22 @@ function inviaOrdine() {
 	}
 	xhttp.open("POST", "/invia-ordine");
   	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  	var data = "NTavolo=14&Nome='pasta al sugo'&Quantita=4";
-  	xhttp.send(data); // TODO CREARE DATA IN FORMATO URL ENCODED
+  	xhttp.send(buildMex()); // post http
 }
 
+//TODO
 /* costruisce il payload della richiesta POST */
 function buildMex() {
-	//return "primo=ciao_bello";
+	let tav = sessionStorage.getItem('nTavolo');
+	var data = 'nTavolo=' + tav;
+
+	for(var i=0; i<20; i++) {
+		if (sessionStorage.getItem(i) > 0) {
+			data += '&id=' + i + '&quantita=' + sessionStorage.getItem(i);
+		}
+	}
+	//TODO RITORNARE I DATI IN FORMATO URL ENCODED
+	return data;
 }
 
 /* parametrizzazione della funzione per getElementById() */

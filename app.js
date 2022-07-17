@@ -4,6 +4,7 @@ var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 const bp = require('body-parser');
+var fs = require('fs');
 
 var app = express();
 
@@ -33,9 +34,26 @@ app.get('/riepilogo', (req, res) => {
 //TODO STO COSTRUENDO LA POST GESTITA DAL SERVER
 app.post('/invia-ordine', (req, res) => {
   console.log("received POST invia-ordine");
-  let esempio = req.body;
-  console.log(esempio);
+
+  //console.log("nTavolo è " + req.body.nTavolo);
+  //console.log(req.body);
+  //console.info("Nome è " + req.body.Nome);
+  //console.log("Q.tà è " + req.body.Quantita);
+
   res.send("Ordine inviato");
+
+  var nTavolo = req.body.nTavolo; // prende il tavolo
+  for(var i=0; i<20; i++) {
+    var temp = 'piatto: ' + req.body.id[i] + ' con quantità ' + req.body.quantita[i];
+    var portate = portate + '\n' + temp;
+  }
+
+  // scrive l'ordine in un txt
+  fs.appendFile('Ordini.txt', 'Numero del tavolo: ' + nTavolo + '\n' + portate + '\n', (err) => {
+    if(err) 
+      throw err;
+      console.log("L'ordine è stato scritto nel file Ordini.txt");
+  });
 });
 
 
