@@ -41,18 +41,25 @@ app.post('/invia-ordine', (req, res) => {
   //console.log("Q.tà è " + req.body.Quantita);
 
   res.send("Ordine inviato");
-
+  //TODO METTICI UN CONSOLE LOG E VEDI I VALORI DI PORTATE E TEMP!!!!!!!!!!!!!!!!!
   var nTavolo = req.body.nTavolo; // prende il tavolo
   for(var i=0; i<20; i++) {
-    var temp = 'piatto: ' + req.body.id[i] + ' con quantità ' + req.body.quantita[i];
-    var portate = portate + '\n' + temp;
+    if(req.body.id[i] != null) { // prendo solo se esiste
+      //console.log("-> prima temp è " + temp);
+      var temp = 'piatto: ' + req.body.id[i] + ' con quantità ' + req.body.quantita[i];
+      //console.log("-> dopo temp è " + temp);
+
+      //console.log("-> prima portate è " + portate);
+      var portate = portate + '\n' + temp;
+      //console.log("-> dopo portate è " + portate);
+    }
   }
 
   // scrive l'ordine in un txt
-  fs.appendFile('Ordini.txt', 'Numero del tavolo: ' + nTavolo + '\n' + portate + '\n', (err) => {
+  fs.appendFile('Ordini.txt', 'Numero del tavolo: ' + nTavolo + '\n' + portate + '\n\n---------\n\n', (err) => {
     if(err) 
       throw err;
-      console.log("L'ordine è stato scritto nel file Ordini.txt");
+    console.log("L'ordine è stato scritto nel file Ordini.txt");
   });
 });
 
