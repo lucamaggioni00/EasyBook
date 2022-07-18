@@ -163,3 +163,39 @@ piatto: 19 con quantità 1
 
 ---------
 
+Mon Jul 18 2022 11:48:10 GMT+0200 (Ora legale dell’Europa centrale)
+Numero del tavolo: 3
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Mon Jul 18 2022 11:56:31 GMT+0200 
+Numero del tavolo: 9
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 3
+
+---------
+
+Mon Jul 18 2022 11:57:18 
+Numero del tavolo: 9
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 3
+
+---------
+
+# Mon Jul 18 2022 11:59:27 
+Numero del tavolo: 9
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 3
+
+---------
+

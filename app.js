@@ -41,7 +41,7 @@ app.post('/invia-ordine', (req, res) => {
   //console.log("Q.tà è " + req.body.Quantita);
 
   res.send("Ordine inviato");
-  //TODO METTICI UN CONSOLE LOG E VEDI I VALORI DI PORTATE E TEMP!!!!!!!!!!!!!!!!!
+  // POST handling
   var nTavolo = req.body.nTavolo; // prende il tavolo
   var portate = ' ';
   for(var i=0; i<20; i++) {
@@ -56,8 +56,11 @@ app.post('/invia-ordine', (req, res) => {
     }
   }
 
+  var today = String(new Date());
+  today = today.substring(0, 25); // per poi stampare solo la data
+
   // scrive l'ordine in un txt
-  fs.appendFile('Ordini.txt', 'Numero del tavolo: ' + nTavolo + '\n' + portate + '\n\n---------\n\n', (err) => {
+  fs.appendFile('Ordini.txt', '# ' + today + '\nNumero del tavolo: ' + nTavolo + '\n' + portate + '\n\n---------\n\n', (err) => {
     if(err) 
       throw err;
     console.log("L'ordine è stato scritto nel file Ordini.txt");
