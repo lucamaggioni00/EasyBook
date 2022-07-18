@@ -31,36 +31,26 @@ app.get('/riepilogo', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
 });
 
-//TODO STO COSTRUENDO LA POST GESTITA DAL SERVER
+// POST
 app.post('/invia-ordine', (req, res) => {
   console.log("received POST invia-ordine");
-
-  //console.log("nTavolo è " + req.body.nTavolo);
-  //console.log(req.body);
-  //console.info("Nome è " + req.body.Nome);
-  //console.log("Q.tà è " + req.body.Quantita);
-
-  res.send("Ordine inviato");
+  res.send("Ordine ricevuto");
   // POST handling
   var nTavolo = req.body.nTavolo; // prende il tavolo
   var portate = ' ';
   for(var i=0; i<20; i++) {
     if(req.body.id[i] != null) { // prendo solo se esiste
-      //console.log("-> prima temp è " + temp);
       var temp = 'piatto: ' + req.body.id[i] + ' con quantità ' + req.body.quantita[i];
-      //console.log("-> dopo temp è " + temp);
 
-      //console.log("-> prima portate è " + portate);
       var portate = portate + '\n' + temp;
-      //console.log("-> dopo portate è " + portate);
     }
   }
 
-  var today = String(new Date());
-  today = today.substring(0, 25); // per poi stampare solo la data
+  var ora = String(new Date());
+  ora = ora.substring(0, 25); // per poi stampare solo la data
 
   // scrive l'ordine in un txt
-  fs.appendFile('Ordini.txt', '# ' + today + '\nNumero del tavolo: ' + nTavolo + '\n' + portate + '\n\n---------\n\n', (err) => {
+  fs.appendFile('Ordini.txt', '# ' + ora + '\nNumero del tavolo: ' + nTavolo + '\n' + portate + '\n\n---------\n\n', (err) => {
     if(err) 
       throw err;
     console.log("L'ordine è stato scritto nel file Ordini.txt");

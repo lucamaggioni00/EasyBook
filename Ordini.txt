@@ -199,3 +199,21 @@ piatto: 19 con quantità 3
 
 ---------
 
+# Mon Jul 18 2022 12:01:13 
+Numero del tavolo: 9
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 3
+
+---------
+
+# Mon Jul 18 2022 12:07:39 
+Numero del tavolo: 9
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 3
+
+---------
+
