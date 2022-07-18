@@ -99,3 +99,67 @@ piatto: 19 con quantità 1
 
 ---------
 
+Numero del tavolo: 5
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 5
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 5
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 5
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 1
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 1
+undefined
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 3
+ nulla 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+
+Numero del tavolo: 3
+ 
+piatto: 0 con quantità 4
+piatto: 1 con quantità 2
+piatto: 19 con quantità 1
+
+---------
+

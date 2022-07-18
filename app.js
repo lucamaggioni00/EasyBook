@@ -43,6 +43,7 @@ app.post('/invia-ordine', (req, res) => {
   res.send("Ordine inviato");
   //TODO METTICI UN CONSOLE LOG E VEDI I VALORI DI PORTATE E TEMP!!!!!!!!!!!!!!!!!
   var nTavolo = req.body.nTavolo; // prende il tavolo
+  var portate = ' ';
   for(var i=0; i<20; i++) {
     if(req.body.id[i] != null) { // prendo solo se esiste
       //console.log("-> prima temp è " + temp);
