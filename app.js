@@ -9,7 +9,7 @@ var fs = require('fs');
 var app = express();
 
 app.use(bp.json());
-app.use(bp.urlencoded({ extended: true }));//TODO SERVE O TOLGO?
+app.use(bp.urlencoded({ extended: true }));
 
 
 /* routing NOTA: __dirname è il path assoluto fino a qui */
@@ -38,14 +38,15 @@ app.post('/invia-ordine', (req, res) => {
   // POST handling
   var nTavolo = req.body.nTavolo; // prende il tavolo
   var portate = ' ';
-  for(var i=0; i<20; i++) {
+  for(var i=0; i<20; i++) { 
     if(req.body.id[i] != null) { // prendo solo se esiste
-      var temp = 'piatto: ' + req.body.id[i] + ' con quantità ' + req.body.quantita[i];
-
+      var temp = 'piatto: ' + (parseInt(req.body.id[i]) + 1) + ' con quantità ' + req.body.quantita[i];
+      console.log('piatto: ' + req.body.id[i]);
       var portate = portate + '\n' + temp;
     }
   }
 
+  // orario
   var ora = String(new Date());
   ora = ora.substring(0, 25); // per poi stampare solo la data
 
@@ -101,15 +102,6 @@ app.get('/others/menu1.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   res.sendFile(path.join(__dirname, '/public/others/menu1.json'));
 });
-
-
-/* test TODO DA TOGLIERE */
-app.get('/test.html', (req, res) => {
-  console.log("received GET prova.hmtl");
-  res.setHeader('Content-Type', 'text/html');
-  res.sendFile(path.join(__dirname, '/public/htmls/prova.html'));
-});
-
 
 
 

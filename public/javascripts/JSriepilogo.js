@@ -32,8 +32,8 @@ function scontrino() {
 					$("piatto"+i).innerText = menu[i].Nome;
 					$("prezzo"+i).innerText = "€ " + menu[i].Prezzo;
 				}
-				
-				else{ // se non ha ordinato quello, nascondi la riga della tabella
+				// se non ha ordinato quello, nascondi la riga della tabella
+				else{ 
 					$("riga"+i).style.display = 'none';
 				}
 			}
