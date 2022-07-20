@@ -35,7 +35,7 @@ app.get('/riepilogo', (req, res) => {
 app.post('/invia-ordine', (req, res) => {
   console.log("received POST invia-ordine");
   res.send("Ordine ricevuto");
-  // POST handling
+  // POST payload handling
   var nTavolo = req.body.nTavolo; // prende il tavolo
   var portate = ' ';
   for(var i=0; i<20; i++) { 
@@ -107,7 +107,7 @@ app.get('/others/menu1.json', (req, res) => {
 
 app.listen(8080);
 
-// catch 404 and forward to error handler TODO VALUTARE SE TOGLIERE
+// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
 });

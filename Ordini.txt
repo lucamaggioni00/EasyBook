@@ -266,3 +266,217 @@ piatto: 19 con quantità 3
 
 ---------
 
+# Wed Jul 20 2022 13:57:08 
+Numero del tavolo: 17
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+
+---------
+
+# Wed Jul 20 2022 14:09:40 
+Numero del tavolo: 17
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+
+---------
+
+# Wed Jul 20 2022 14:10:44 
+Numero del tavolo: 17
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+
+---------
+
+# Wed Jul 20 2022 14:11:26 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 14:14:20 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 14:16:52 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 14:19:19 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 14:19:37 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 1
+
+---------
+
+# Wed Jul 20 2022 14:19:50 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 1
+
+---------
+
+# Wed Jul 20 2022 18:21:52 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 1
+
+---------
+
+# Wed Jul 20 2022 18:22:37 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 2
+piatto: 4 con quantità 2
+piatto: 6 con quantità 3
+piatto: 20 con quantità 1
+
+---------
+
+# Wed Jul 20 2022 18:24:11 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:27:04 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:27:50 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:30:19 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:30:41 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:33:09 
+Numero del tavolo: 18
+ 
+piatto: 4 con quantità 2
+piatto: 9 con quantità 4
+piatto: 13 con quantità 2
+piatto: 16 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:34:51 
+Numero del tavolo: 4
+ 
+piatto: 1 con quantità 1
+piatto: 2 con quantità 1
+piatto: 13 con quantità 2
+piatto: 18 con quantità 4
+
+---------
+
+# Wed Jul 20 2022 18:41:30 
+Numero del tavolo: 7
+ 
+piatto: 1 con quantità 2
+piatto: 12 con quantità 2
+piatto: 18 con quantità 4
+
+---------
+
+# Wed Jul 20 2022 18:52:18 
+Numero del tavolo: 2
+ 
+piatto: 1 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 18:54:44 
+Numero del tavolo: 1
+ 
+piatto: 1 con quantità 3
+piatto: 2 con quantità 3
+piatto: 3 con quantità 2
+piatto: 20 con quantità 2
+
+---------
+

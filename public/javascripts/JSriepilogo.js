@@ -53,7 +53,8 @@ function inviaOrdine() {
 		if (this.readyState == 4 && this.status == 200) {
 			// Quello che fa quando la richiesta è stata inviata
 			alert('Ordine inviato con successo! Buon appetito!');
-			//TODO poi deve rimandare alla pagina index! --> nota che magari posso fare redirect dal server, dopo che ha scritto nel txt
+			sessionStorage.clear(); 
+			window.location.assign("http://localhost:8080/index");
 		}
 	}
 	xhttp.open("POST", "/invia-ordine");
@@ -61,7 +62,6 @@ function inviaOrdine() {
   	xhttp.send(buildMex()); // post http
 }
 
-//TODO
 /* costruisce il payload della richiesta POST */
 function buildMex() {
 	let tav = sessionStorage.getItem('nTavolo');
