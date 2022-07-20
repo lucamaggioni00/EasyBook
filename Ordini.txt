@@ -1,418 +1,3 @@
-Numero del tavolo: 6
-undefined
-piatto: 12 con quantità 2
-piatto: 15 con quantità 2
-Numero del tavolo: 15
-undefined
-piatto: 0 con quantità 5
-piatto: 1 con quantità 4
-piatto: 3 con quantità 5
-piatto: 5 con quantità 3
-piatto: 6 con quantità 4
-piatto: 7 con quantità 4
-piatto: 8 con quantità 4
-piatto: 10 con quantità 8
-piatto: 12 con quantità 2
-piatto: 15 con quantità 2
-
-
-Numero del tavolo: 15
-undefined
-piatto: 1 con quantità 4
-piatto: 3 con quantità 5
-piatto: 5 con quantità 3
-piatto: 6 con quantità 4
-piatto: 7 con quantità 4
-piatto: 8 con quantità 4
-piatto: 10 con quantità 8
-piatto: 12 con quantità 2
-piatto: 15 con quantità 2
-piatto: 19 con quantità 3
-
-
-Numero del tavolo: 15
-undefined
-piatto: 1 con quantità 4
-piatto: 3 con quantità 5
-piatto: 5 con quantità 3
-piatto: 6 con quantità 4
-piatto: 7 con quantità 4
-piatto: 8 con quantità 4
-piatto: 10 con quantità 8
-piatto: 12 con quantità 2
-piatto: 15 con quantità 2
-piatto: 19 con quantità 3
-
-
-Numero del tavolo: 15
-undefined
-piatto: 1 con quantità 4
-piatto: 3 con quantità 5
-piatto: 5 con quantità 3
-piatto: 6 con quantità 4
-piatto: 7 con quantità 4
-piatto: 8 con quantità 4
-piatto: 10 con quantità 8
-piatto: 12 con quantità 2
-piatto: 15 con quantità 2
-piatto: 19 con quantità 3
-
-
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
-
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
----------
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
----------
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
----------
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 4
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 5
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 5
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 5
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 5
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 1
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 1
-undefined
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 3
- nulla 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Numero del tavolo: 3
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Mon Jul 18 2022 11:48:10 GMT+0200 (Ora legale dell’Europa centrale)
-Numero del tavolo: 3
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 1
-
----------
-
-Mon Jul 18 2022 11:56:31 GMT+0200 
-Numero del tavolo: 9
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 3
-
----------
-
-Mon Jul 18 2022 11:57:18 
-Numero del tavolo: 9
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 3
-
----------
-
-# Mon Jul 18 2022 11:59:27 
-Numero del tavolo: 9
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 3
-
----------
-
-# Mon Jul 18 2022 12:01:13 
-Numero del tavolo: 9
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 3
-
----------
-
-# Mon Jul 18 2022 12:07:39 
-Numero del tavolo: 9
- 
-piatto: 0 con quantità 4
-piatto: 1 con quantità 2
-piatto: 19 con quantità 3
-
----------
-
-# Mon Jul 18 2022 22:47:59 
-Numero del tavolo: 10
- 
-piatto: 0 con quantità 2
-piatto: 5 con quantità 1
-piatto: 17 con quantità 2
-
----------
-
-# Tue Jul 19 2022 19:27:56 
-Numero del tavolo: 2
- 
-piatto: 0 con quantità 2
-piatto: 19 con quantità 2
-
----------
-
-# Tue Jul 19 2022 19:29:42 
-Numero del tavolo: 2
- 
-piatto: 0 con quantità 2
-piatto: 19 con quantità 2
-
----------
-
-# Tue Jul 19 2022 19:30:55 
-Numero del tavolo: 2
- 
-piatto: 01 con quantità 2
-piatto: 191 con quantità 2
-
----------
-
-# Tue Jul 19 2022 19:32:26 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 2
-piatto: 20 con quantità 2
-
----------
-
-# Tue Jul 19 2022 19:37:16 
-Numero del tavolo: 1
- 
-piatto: 2 con quantità 3
-piatto: 19 con quantità 3
-
----------
-
-# Wed Jul 20 2022 13:57:08 
-Numero del tavolo: 17
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-
----------
-
-# Wed Jul 20 2022 14:09:40 
-Numero del tavolo: 17
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-
----------
-
-# Wed Jul 20 2022 14:10:44 
-Numero del tavolo: 17
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-
----------
-
-# Wed Jul 20 2022 14:11:26 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 2
-
----------
-
-# Wed Jul 20 2022 14:14:20 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 2
-
----------
-
-# Wed Jul 20 2022 14:16:52 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 2
-
----------
-
-# Wed Jul 20 2022 14:19:19 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 2
-
----------
-
-# Wed Jul 20 2022 14:19:37 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 1
-
----------
-
-# Wed Jul 20 2022 14:19:50 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 1
-
----------
-
-# Wed Jul 20 2022 18:21:52 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 1
-
----------
-
-# Wed Jul 20 2022 18:22:37 
-Numero del tavolo: 2
- 
-piatto: 1 con quantità 1
-piatto: 2 con quantità 2
-piatto: 4 con quantità 2
-piatto: 6 con quantità 3
-piatto: 20 con quantità 1
-
----------
-
-# Wed Jul 20 2022 18:24:11 
-Numero del tavolo: 18
- 
-piatto: 4 con quantità 2
-piatto: 9 con quantità 4
-piatto: 13 con quantità 2
-piatto: 16 con quantità 2
-
----------
-
-# Wed Jul 20 2022 18:27:04 
-Numero del tavolo: 18
- 
-piatto: 4 con quantità 2
-piatto: 9 con quantità 4
-piatto: 13 con quantità 2
-piatto: 16 con quantità 2
-
----------
-
-# Wed Jul 20 2022 18:27:50 
-Numero del tavolo: 18
- 
-piatto: 4 con quantità 2
-piatto: 9 con quantità 4
-piatto: 13 con quantità 2
-piatto: 16 con quantità 2
-
----------
 
 # Wed Jul 20 2022 18:30:19 
 Numero del tavolo: 18
@@ -477,6 +62,43 @@ piatto: 1 con quantità 3
 piatto: 2 con quantità 3
 piatto: 3 con quantità 2
 piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 21:44:43 
+Numero del tavolo: 6
+ 
+piatto: 2 con quantità 2
+piatto: 6 con quantità 1
+piatto: 13 con quantità 2
+piatto: 18 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 23:00:00 
+Numero del tavolo: 4
+ 
+piatto: 1 con quantità 2
+piatto: 20 con quantità 1
+
+---------
+
+# Wed Jul 20 2022 23:33:03 
+Numero del tavolo: 5
+ 
+piatto: 2 con quantità 2
+piatto: 17 con quantità 1
+piatto: 20 con quantità 2
+
+---------
+
+# Wed Jul 20 2022 23:36:58 
+Numero del tavolo: 7
+ 
+piatto: 1 con quantità 2
+piatto: 5 con quantità 2
+piatto: 9 con quantità 6
+piatto: 19 con quantità 8
 
 ---------
 

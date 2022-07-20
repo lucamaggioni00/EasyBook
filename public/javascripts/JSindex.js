@@ -1,5 +1,6 @@
 /* --- Scripts della pagina index.html --- */
 
+
 /* chiamata AJAX per menu */
 const xhttp = new XMLHttpRequest();
 
@@ -31,7 +32,7 @@ for (let i=0; i < 20; i++) {
 	$("contatore"+i).innerText = sessionStorage.getItem(i);
 }
 
-/* TODO inserimento ntavolo con controllo?? */
+/* settaggio nTavolo nello storage */
 function riepilogo() {
 	let valore = selectTavolo();
 	// se non hai selezionato, ma c'è un valore numero nello storage
@@ -45,7 +46,6 @@ function riepilogo() {
 	// se ho selezionato, in ogni caso devo scrivere o sovrascrivere
 	else if(valore != false) {
 		sessionStorage.setItem("nTavolo", valore);
-		//console.log("nuovo numero settato nello storage");
 	}
 }
 
@@ -55,7 +55,7 @@ function $(id) {
 } 
 
 
-/* ritorna il numero del tavolo selezionato, oppure false*/
+/* ritorna il numero del tavolo selezionato, oppure false */
 function selectTavolo(){
 	var x = $('mySelect').selectedIndex; // x = indice del valore selezionato
 	if (x != "") { // se ha selezionato un numero 
@@ -63,7 +63,6 @@ function selectTavolo(){
 		return nTav;
 	}
 	else {
-		//TODO TOGLIERE alert("Perfavore, torna indietro e inserisci il numero del tuo tavolo");
 		return false;
 	}
 }

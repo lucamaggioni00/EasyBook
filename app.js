@@ -31,7 +31,7 @@ app.get('/riepilogo', (req, res) => {
   res.sendFile(path.join(__dirname, '/public/htmls/riepilogo.html'));
 });
 
-// POST
+/* POST */
 app.post('/invia-ordine', (req, res) => {
   console.log("received POST invia-ordine");
   res.send("Ordine ricevuto");
@@ -41,7 +41,6 @@ app.post('/invia-ordine', (req, res) => {
   for(var i=0; i<20; i++) { 
     if(req.body.id[i] != null) { // prendo solo se esiste
       var temp = 'piatto: ' + (parseInt(req.body.id[i]) + 1) + ' con quantità ' + req.body.quantita[i];
-      console.log('piatto: ' + req.body.id[i]);
       var portate = portate + '\n' + temp;
     }
   }

@@ -24,10 +24,8 @@ function scontrino() {
 
 			// inserisce i valori nella griglia
 			for (let i=0; i < 20; i++) { 
-				//console.log("Dal session storage si ha: i=" + i + " con valore=" + sessionStorage.getItem(i));
 				$("contatore"+i).innerText = sessionStorage.getItem(i);
 				
-				//TODO inserire anche nome e prezzo
 				if(sessionStorage.getItem(i) > 0) { // se ha ordinato almeno una porzione
 					$("piatto"+i).innerText = menu[i].Nome;
 					$("prezzo"+i).innerText = "€ " + menu[i].Prezzo;
@@ -45,7 +43,7 @@ function scontrino() {
 	//console.log("Richiesta mandata");
 }
 
-/* POST */
+/* Chiamata AJAX per POST */
 function inviaOrdine() {
 	const xhttp = new XMLHttpRequest();
 
@@ -62,7 +60,7 @@ function inviaOrdine() {
   	xhttp.send(buildMex()); // post http
 }
 
-/* costruisce il payload della richiesta POST */
+/* costruisce il payload della richiesta POST in formato URL encoded */
 function buildMex() {
 	let tav = sessionStorage.getItem('nTavolo');
 	var data = 'nTavolo=' + tav;
@@ -72,7 +70,6 @@ function buildMex() {
 			data += '&id=' + i + '&quantita=' + sessionStorage.getItem(i);
 		}
 	}
-	//TODO RITORNARE I DATI IN FORMATO URL ENCODED
 	return data;
 }
 
