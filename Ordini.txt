@@ -119,3 +119,39 @@ piatto: 1 con quantità 1
 
 ---------
 
+# Thu Jul 21 2022 14:04:38 
+Numero del tavolo: 19
+ 
+piatto: 2 con quantità 5
+piatto: 6 con quantità 3
+piatto: 13 con quantità 5
+piatto: 20 con quantità 1
+
+---------
+
+# Thu Jul 21 2022 15:57:49 
+Numero del tavolo: 6
+ 
+piatto: 1 con quantità 1
+piatto: 3 con quantità 2
+
+---------
+
+# Thu Jul 21 2022 16:25:37 
+Numero del tavolo: 3
+ 
+piatto: 1 con quantità 2
+
+---------
+
+# Thu Jul 21 2022 17:12:51 
+Numero del tavolo: 14
+ 
+piatto: 1 con quantità 1
+piatto: 4 con quantità 1
+piatto: 12 con quantità 1
+piatto: 18 con quantità 1
+piatto: 20 con quantità 2
+
+---------
+
